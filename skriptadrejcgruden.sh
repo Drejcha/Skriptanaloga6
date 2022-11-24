@@ -1,4 +1,4 @@
-
+!#bin/bash
 mkdir Windows
 cd Windows
 mkdir Desktop Dokumenti Prenosi Slike Videi
