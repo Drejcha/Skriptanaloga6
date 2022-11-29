@@ -7,7 +7,8 @@ do
 mkdir mapa$stevec
 done
 
-echo -n "Enter name of text file: "; read FILENAME
+#echo -n "Enter name of text file: "; 
+read imena.txt
 while read USER; do
    echo "$USER"
   sudo  useradd -m "${USER}" -d /users/"${USER}"
