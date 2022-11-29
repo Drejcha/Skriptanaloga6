@@ -1,7 +1,9 @@
+
+!#bin/bash
 mkdir Windows
 cd Windows
 mkdir Desktop Dokumenti Prenosi Slike Videi
-cd ..
+
 for stevec in 1 2 3 4 5
 do
 mkdir mapa$stevec
