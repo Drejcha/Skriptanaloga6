@@ -1,9 +1,8 @@
 
 !#bin/bash
-mkdir Windows /
+mkdir Windows 
 cd Windows
-mkdir Desktop Dokumenti Prenosi Slike Videi/
-
+mkdir Desktop Dokumenti Prenosi Slike Videi
 
 for stevec in 1 2 3 4 5
 do
