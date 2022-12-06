@@ -23,6 +23,7 @@ tar -xf nginx-1.21.1.tar.gz
 cd nginx-1.21.1 
 ./configure 
 sleep 5 
+sudo apt install plocate
 cd ..
 
 sudo apt install net-tools -y
