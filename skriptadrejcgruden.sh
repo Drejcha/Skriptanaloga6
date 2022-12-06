@@ -1,18 +1,21 @@
 #!/bin/bash
 sudo apt update
 mkdir Windows 
-cd $Windows 
+cd Windows 
 mkdir Namizje Dokumenti Prenosi Slike Videi  
+
 for stevec in 1 2 3 4 5 
 do 
 mkdir mapa$stevec 
 done 
+
 sleep 5
 echo -n "Enter name of text file: "; read FILENAME 
 while read USER; do 
   sudo  useradd -m "${USER}" -d /users/"${USER}" 
    sudo  usermod -aG sudo -m "${USER}" 
 done < "${FILENAME}"  
+
 sudo apt update && upgrade 
 sudo apt-get install git 
 sudo wget http://nginx.org/download/nginx-1.21.1.tar.gz 
@@ -21,6 +24,7 @@ cd nginx-1.21.1
 ./configure 
 sleep 5 
 cd ..
+
 sudo apt install net-tools -y
 sudo apt-get update
 sudo apt-get install \
