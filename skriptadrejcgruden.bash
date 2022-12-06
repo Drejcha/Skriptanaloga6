@@ -14,7 +14,7 @@ sleep 5
 
 echo -n "Enter name of text file: "; read FILENAME 
 while read USER; do 
-sudo useradd "${USER}" -m -d $mojpwd/uporabniki/"${USER}"
+sudo useradd "${USER}" -m -d $mojpwd/Windows/uporabniki/"${USER}"
 sudo  usermod -aG sudo -m "${USER}" 
 done < "${FILENAME}"  
 
