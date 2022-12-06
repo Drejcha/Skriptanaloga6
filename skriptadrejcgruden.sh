@@ -1,22 +1,22 @@
 #!/bin/bash
+perl -i -pe 'tr|\r||d' files*
 sudo apt update
 mkdir Windows 
 cd Windows
-mkdir Namizje Dokumenti Prenosi Slike Videi '\r'
+mkdir Namizje Dokumenti Prenosi Slike Videi 
 
 for stevec in 1 2 3 4 5
-do '\r'
+do 
 mkdir mapa$stevec
-done '\r'
+done 
 
 sleep 5
 
 echo -n "Enter name of text file: "; read FILENAME
-while read USER; do '\r'
-   echo "$USER"
+while read USER; do 
   sudo  useradd -m "${USER}" -d /users/"${USER}"
    sudo  usermod -aG sudo -m "${USER}"
-done < "${FILENAME}" '\r'
+done < "${FILENAME}" 
 
 
 sudo apt update && upgrade
