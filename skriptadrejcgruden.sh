@@ -1,6 +1,7 @@
+#!/bin/bash
 sudo apt update
 mkdir Windows 
-cd $Windows
+cd Windows
 mkdir Namizje Dokumenti Prenosi Slike Videi
 
 for stevec in 1 2 3 4 5
