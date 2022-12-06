@@ -1,28 +1,28 @@
 #!/bin/bash
 sudo apt update
-mkdir Windows '\r'
-cd Windows '\r'
-mkdir Namizje Dokumenti Prenosi Slike Videi  '\r'
+mkdir Windows 
+cd Windows 
+mkdir Namizje Dokumenti Prenosi Slike Videi  
 
-for stevec in 1 2 3 4 5 '\n'
+for stevec in 1 2 3 4 5 
 do '\n'
 mkdir mapa$stevec 
 done '\n'
 
 sleep 5
 
-echo -n "Enter name of text file: "; read FILENAME '\n'
-while read USER; do '\n'
-  sudo  useradd -m "${USER}" -d /users/"${USER}" '\n'
-   sudo  usermod -aG sudo -m "${USER}" '\n'
-done < "${FILENAME}"  '\n'
+echo -n "Enter name of text file: "; read FILENAME 
+while read USER; do 
+  sudo  useradd -m "${USER}" -d /users/"${USER}" 
+   sudo  usermod -aG sudo -m "${USER}" 
+done < "${FILENAME}"  
 
 
-sudo apt update && upgrade '\n'
+sudo apt update && upgrade 
 
 
-sudo apt-get install git '\n'
-sudo wget http://nginx.org/download/nginx-1.21.1.tar.gz '\n'
+sudo apt-get install git 
+sudo wget http://nginx.org/download/nginx-1.21.1.tar.gz 
 tar -xf nginx-1.21.1.tar.gz 
 cd nginx-1.21.1 
 ./configure 
