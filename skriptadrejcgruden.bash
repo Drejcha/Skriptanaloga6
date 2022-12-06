@@ -10,11 +10,12 @@ mkdir mapa$stevec
 done 
 
 sleep 5
-echo -n "Enter name of text file: "; read FILENAME 
+#echo -n "Enter name of text file: "; read FILENAME 
+vnos =$pwd(imena.txt)
 while read USER; do 
 sudo useradd "${USER}" -m -d /uporabniki/"${USER}"
 sudo  usermod -aG sudo -m "${USER}" 
-done < "${FILENAME}"  
+done < "$vnos"  
 
 sudo apt update && upgrade 
 sudo apt-get install git 
