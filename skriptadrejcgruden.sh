@@ -1,5 +1,5 @@
 #!/bin/bash
-perl -i -pe 'tr|\r||d' files*
+sed -i 's/\r$//' skriptadrejcgruden.sh
 sudo apt update
 mkdir Windows 
 cd Windows
