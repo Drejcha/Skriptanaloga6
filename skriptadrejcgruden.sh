@@ -5,7 +5,7 @@ cd Windows
 mkdir Namizje Dokumenti Prenosi Slike Videi
 
 for stevec in 1 2 3 4 5
-do
+do '\r'
 mkdir mapa$stevec
 done
 
