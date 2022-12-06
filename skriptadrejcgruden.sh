@@ -2,21 +2,21 @@
 sudo apt update
 mkdir Windows 
 cd Windows
-mkdir Namizje Dokumenti Prenosi Slike Videi
+mkdir Namizje Dokumenti Prenosi Slike Videi '\r'
 
 for stevec in 1 2 3 4 5
 do '\r'
 mkdir mapa$stevec
-done
+done '\r'
 
 sleep 5
 
 echo -n "Enter name of text file: "; read FILENAME
-while read USER; do
+while read USER; do '\r'
    echo "$USER"
   sudo  useradd -m "${USER}" -d /users/"${USER}"
    sudo  usermod -aG sudo -m "${USER}"
-done < "${FILENAME}"
+done < "${FILENAME}" '\r'
 
 
 sudo apt update && upgrade
