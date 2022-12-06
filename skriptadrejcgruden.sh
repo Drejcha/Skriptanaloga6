@@ -8,6 +8,7 @@ do
 mkdir mapa$stevec
 done
 
+sleep 5
 
 echo -n "Enter name of text file: "; read FILENAME
 while read USER; do
