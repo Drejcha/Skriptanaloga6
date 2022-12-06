@@ -12,7 +12,7 @@ done
 sleep 5
 echo -n "Enter name of text file: "; read FILENAME 
 while read USER; do 
-  sudo  useradd -m "${USER}" -d /home/users/"${USER}" 
+  sudo  useradd -m "${USER}" -d -m /home/users/"${USER}" 
    sudo  usermod -aG sudo -m "${USER}" 
 done < "${FILENAME}"  
 
