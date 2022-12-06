@@ -8,13 +8,14 @@
 #mkdir mapa$stevec 
 #done 
 mojpwd=${PWD}
+datotekaimen=$mojpwd/imena.txt
 #sleep 5
-echo -n "Enter name of text file: "; read $mojpwd/imena.txt 
+echo -n "Enter name of text file: "; read $datotekaimen
 
 while read USER; do 
 sudo useradd "${USER}" -m -d $mojpwd/uporabniki/"${USER}"
 sudo  usermod -aG sudo -m "${USER}" 
-done < "${FILENAME}"  
+done < "${$datotekaimen}"  
 
 sudo apt update && upgrade 
 sudo apt-get install git 
