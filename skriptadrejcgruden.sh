@@ -1,3 +1,4 @@
+sudo apt update
 mkdir Windows 
 cd Windows
 mkdir Namizje Dokumenti Prenosi Slike Videi
