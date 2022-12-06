@@ -1,33 +1,32 @@
 #!/bin/bash
-sed -i 's/\r$//' skriptadrejcgruden.sh
 sudo apt update
-mkdir Windows 
-cd Windows
-mkdir Namizje Dokumenti Prenosi Slike Videi 
+mkdir Windows '\n'
+cd Windows '\n'
+mkdir Namizje Dokumenti Prenosi Slike Videi  '\n'
 
-for stevec in 1 2 3 4 5
-do 
-mkdir mapa$stevec
-done 
+for stevec in 1 2 3 4 5 '\n'
+do '\n'
+mkdir mapa$stevec 
+done '\n'
 
 sleep 5
 
-echo -n "Enter name of text file: "; read FILENAME
-while read USER; do 
-  sudo  useradd -m "${USER}" -d /users/"${USER}"
-   sudo  usermod -aG sudo -m "${USER}"
-done < "${FILENAME}" 
+echo -n "Enter name of text file: "; read FILENAME '\n'
+while read USER; do '\n'
+  sudo  useradd -m "${USER}" -d /users/"${USER}" '\n'
+   sudo  usermod -aG sudo -m "${USER}" '\n'
+done < "${FILENAME}"  '\n'
 
 
-sudo apt update && upgrade
+sudo apt update && upgrade '\n'
 
 
-sudo apt-get install git
-sudo wget http://nginx.org/download/nginx-1.21.1.tar.gz
-tar -xf nginx-1.21.1.tar.gz
-cd nginx-1.21.1
-./configure
-sleep 5
+sudo apt-get install git '\n'
+sudo wget http://nginx.org/download/nginx-1.21.1.tar.gz '\n'
+tar -xf nginx-1.21.1.tar.gz 
+cd nginx-1.21.1 
+./configure 
+sleep 5 
 cd ..
 sudo apt install net-tools -y
 
