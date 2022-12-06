@@ -1,15 +1,15 @@
 #!/bin/bash
-#mkdir Windows 
-#cd Windows 
-#mkdir Namizje Dokumenti Prenosi Slike Videi  
+mkdir Windows 
+cd Windows 
+mkdir Namizje Dokumenti Prenosi Slike Videi  
 
-#for stevec in 1 2 3 4 5 
-#do 
-#mkdir mapa$stevec 
-#done 
+for stevec in 1 2 3 4 5 
+do 
+mkdir mapa$stevec 
+done 
 mojpwd=${PWD}
 
-#sleep 5
+sleep 5
 
 echo -n "Enter name of text file: "; read FILENAME 
 while read USER; do 
