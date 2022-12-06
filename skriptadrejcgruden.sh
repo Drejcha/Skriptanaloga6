@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt update
-mkdir Windows '\n'
-cd Windows '\n'
-mkdir Namizje Dokumenti Prenosi Slike Videi  '\n'
+mkdir Windows '\r'
+cd Windows '\r'
+mkdir Namizje Dokumenti Prenosi Slike Videi  '\r'
 
 for stevec in 1 2 3 4 5 '\n'
 do '\n'
